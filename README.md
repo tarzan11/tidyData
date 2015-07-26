@@ -26,21 +26,18 @@ First, we read in all the files
 
 Then we combine test and training data
 
-We need to transpose the contents of Feature labels to be in one row
+Then transpose the contents of Feature labels to be in one row
 
 Then make the names suitable for column names
-cols <- make.names(names=cols, unique=TRUE, allow_ = FALSE)
-
-And assign the names to columns
 
 Then we subset the columns to only those whose names contain mean and standard deviation
 
-Then we take some steps to clean up the names further and make them more readable
+Then we take several steps to clean up the names further and make them more readable
 
 Then we reassign the clean names to the columns
 
 We then Join in the Activity labels and subject IDs
 
-Then we summarize the data by takin the mean of each column
+Then we summarize the data by taking the mean of each column
 
 And finally write the summarized data to file tidy_means.txt
